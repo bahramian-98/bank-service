@@ -1,8 +1,8 @@
 package com.example.bank.mapper.core;
 
 import com.example.bank.model.core.BaseEntity;
-import com.example.bank.requestdto.core.RequestDTO;
-import com.example.bank.responsedto.core.ResponseDTO;
+import com.example.bank.model.core.RequestDTO;
+import com.example.bank.model.core.ResponseDTO;
 import org.springframework.data.domain.Page;
 
 import java.util.List;

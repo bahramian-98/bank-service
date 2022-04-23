@@ -1,6 +1,6 @@
-package com.example.bank.requestdto;
+package com.example.bank.model.customer;
 
-import com.example.bank.requestdto.core.RequestDTO;
+import com.example.bank.model.core.RequestDTO;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

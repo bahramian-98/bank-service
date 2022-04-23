@@ -1,6 +1,6 @@
 package com.example.bank;
 
-import com.example.bank.model.User;
+import com.example.bank.model.user.User;
 import com.example.bank.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationArguments;

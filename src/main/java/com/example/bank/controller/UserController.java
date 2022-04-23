@@ -1,10 +1,10 @@
 package com.example.bank.controller;
 
-import com.example.bank.requestdto.UserRequestDTO;
-import com.example.bank.responsedto.UserResponseDTO;
+import com.example.bank.model.user.UserRequestDTO;
+import com.example.bank.model.user.UserResponseDTO;
 import com.example.bank.service.UserService;
 import io.swagger.annotations.ApiOperation;
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.web.PageableDefault;
@@ -18,10 +18,10 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.validation.Valid;
 
 @RestController
+@RequiredArgsConstructor
 public class UserController {
 
-    @Autowired
-    private UserService userService;
+    private final UserService userService;
 
     @ApiOperation(value = "ثبت کاربر")
     @PostMapping(value = "/user/save")

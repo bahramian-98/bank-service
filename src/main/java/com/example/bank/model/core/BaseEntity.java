@@ -1,6 +1,6 @@
 package com.example.bank.model.core;
 
-import com.example.bank.model.User;
+import com.example.bank.model.user.User;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;

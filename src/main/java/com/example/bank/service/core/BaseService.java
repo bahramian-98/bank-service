@@ -3,8 +3,8 @@ package com.example.bank.service.core;
 import com.example.bank.exception.BankException;
 import com.example.bank.mapper.core.BaseMapper;
 import com.example.bank.model.core.BaseEntity;
-import com.example.bank.requestdto.core.RequestDTO;
-import com.example.bank.responsedto.core.ResponseDTO;
+import com.example.bank.model.core.RequestDTO;
+import com.example.bank.model.core.ResponseDTO;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -46,7 +46,7 @@ public abstract class BaseService<E extends BaseEntity, I extends RequestDTO, O 
     @Transactional
     public O showRow(Long id) {
         Optional<E> eOpt = jpaRepository.findById(id);
-        E e = eOpt.orElseThrow(() -> new BankException("اطلاعاتی با شناسه مورد نظر یافت نشد."));
+        E e = eOpt.orElseThrow(() -> new BankException("اطلاعاتی با شناسه مورد نظر یافت نشد!"));
         return mapper.toDTO(e);
     }
 }

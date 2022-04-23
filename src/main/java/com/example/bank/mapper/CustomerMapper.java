@@ -1,9 +1,9 @@
 package com.example.bank.mapper;
 
 import com.example.bank.mapper.core.BaseMapper;
-import com.example.bank.model.Customer;
-import com.example.bank.requestdto.CustomerRequestDTO;
-import com.example.bank.responsedto.CustomerResponseDTO;
+import com.example.bank.model.customer.Customer;
+import com.example.bank.model.customer.CustomerRequestDTO;
+import com.example.bank.model.customer.CustomerResponseDTO;
 import org.springframework.stereotype.Component;
 
 @Component

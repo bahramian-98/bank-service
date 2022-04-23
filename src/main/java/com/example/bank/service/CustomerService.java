@@ -2,10 +2,10 @@ package com.example.bank.service;
 
 import com.example.bank.exception.BankException;
 import com.example.bank.mapper.CustomerMapper;
-import com.example.bank.model.Customer;
+import com.example.bank.model.customer.Customer;
 import com.example.bank.repository.CustomerRepository;
-import com.example.bank.requestdto.CustomerRequestDTO;
-import com.example.bank.responsedto.CustomerResponseDTO;
+import com.example.bank.model.customer.CustomerRequestDTO;
+import com.example.bank.model.customer.CustomerResponseDTO;
 import com.example.bank.service.core.BaseService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Lazy;
@@ -20,7 +20,6 @@ import java.util.Optional;
 public class CustomerService extends BaseService<Customer, CustomerRequestDTO, CustomerResponseDTO> {
 
     private final CustomerRepository customerRepository;
-    private final BankAccountService bankAccountService;
     private final CustomerMapper customerMapper;
 
     @Autowired
@@ -30,7 +29,6 @@ public class CustomerService extends BaseService<Customer, CustomerRequestDTO, C
 
         super(customerMapper, customerRepository);
         this.customerRepository = customerRepository;
-        this.bankAccountService = bankAccountService;
         this.customerMapper = customerMapper;
     }
 

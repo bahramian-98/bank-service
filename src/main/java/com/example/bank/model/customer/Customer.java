@@ -1,4 +1,4 @@
-package com.example.bank.model;
+package com.example.bank.model.customer;
 
 import com.example.bank.model.core.BaseEntity;
 import lombok.Getter;
@@ -15,14 +15,6 @@ import javax.persistence.Table;
 @NoArgsConstructor
 @Table(name = "CUSTOMER")
 public class Customer extends BaseEntity {
-
-   /* @Id
-    @Column(name = "ID")
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
-
-    @Column(name = "IS_DELETED")
-    private Long deleted;*/
 
     @Column(name = "FIRST_NAME", nullable = false)
     private String firstName;

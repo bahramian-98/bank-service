@@ -1,9 +1,9 @@
 package com.example.bank.mapper;
 
 import com.example.bank.mapper.core.BaseMapper;
-import com.example.bank.model.BankAccount;
-import com.example.bank.requestdto.BankAccountRequestDTO;
-import com.example.bank.responsedto.BankAccountResponseDTO;
+import com.example.bank.model.bankaccount.BankAccount;
+import com.example.bank.model.bankaccount.BankAccountRequestDTO;
+import com.example.bank.model.bankaccount.BankAccountResponseDTO;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Component;
 

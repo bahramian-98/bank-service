@@ -35,8 +35,7 @@ public class GlobalExceptionHandler {
     @ResponseStatus(HttpStatus.NOT_FOUND)
     @ResponseBody
     public com.example.bank.exception.Error processValidationError(BankException ex) {
-        com.example.bank.exception.Error error = new Error(NOT_FOUND.value(),ex.getMessage());
-        return error;
+        return new Error(NOT_FOUND.value(),ex.getMessage());
     }
 
     private com.example.bank.exception.Error processFieldErrors(List<FieldError> fieldErrors) {

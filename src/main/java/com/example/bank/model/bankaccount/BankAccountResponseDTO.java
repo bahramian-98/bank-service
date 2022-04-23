@@ -1,6 +1,7 @@
-package com.example.bank.responsedto;
+package com.example.bank.model.bankaccount;
 
-import com.example.bank.responsedto.core.ResponseDTO;
+import com.example.bank.model.customer.CustomerResponseDTO;
+import com.example.bank.model.core.ResponseDTO;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.experimental.SuperBuilder;

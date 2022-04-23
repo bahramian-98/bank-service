@@ -2,10 +2,10 @@ package com.example.bank.service;
 
 import com.example.bank.exception.BankException;
 import com.example.bank.mapper.BankAccountMapper;
-import com.example.bank.model.BankAccount;
+import com.example.bank.model.bankaccount.BankAccount;
 import com.example.bank.repository.BankAccountRepository;
-import com.example.bank.requestdto.BankAccountRequestDTO;
-import com.example.bank.responsedto.BankAccountResponseDTO;
+import com.example.bank.model.bankaccount.BankAccountRequestDTO;
+import com.example.bank.model.bankaccount.BankAccountResponseDTO;
 import com.example.bank.service.core.BaseService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Lazy;

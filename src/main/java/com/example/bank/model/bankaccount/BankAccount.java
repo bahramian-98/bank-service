@@ -1,5 +1,6 @@
-package com.example.bank.model;
+package com.example.bank.model.bankaccount;
 
+import com.example.bank.model.customer.Customer;
 import com.example.bank.model.core.BaseEntity;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -13,14 +14,6 @@ import javax.persistence.*;
 @NoArgsConstructor
 @Table(name = "BANK_ACCOUNT")
 public class BankAccount extends BaseEntity {
-
-    /*@Id
-    @Column(name = "ID")
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
-
-    @Column(name = "IS_DELETED")
-    private Long deleted;*/
 
     @Column(name = "ACCOUNT_NUMBER")
     private String accountNumber;
@@ -41,6 +34,5 @@ public class BankAccount extends BaseEntity {
         DEPOSIT, // سپرده
         LOAN // قرض الحسنه
     }
-
 
 }

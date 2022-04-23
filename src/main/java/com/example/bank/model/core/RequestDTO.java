@@ -1,4 +1,4 @@
-package com.example.bank.requestdto.core;
+package com.example.bank.model.core;
 
 import lombok.Getter;
 
