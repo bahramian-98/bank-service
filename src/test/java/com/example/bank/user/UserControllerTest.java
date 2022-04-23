@@ -39,7 +39,7 @@ public class UserControllerTest {
         Assertions.assertEquals(HttpStatus.CREATED.value(), mvcResult.getResponse().getStatus());
 
         String content = mvcResult.getResponse().getContentAsString();
-        System.out.println("saveTest result : " + content);
+        Assertions.assertNotNull(content);
 
     }
 
@@ -54,7 +54,7 @@ public class UserControllerTest {
         Assertions.assertEquals(HttpStatus.OK.value(), mvcResult.getResponse().getStatus());
 
         String content = mvcResult.getResponse().getContentAsString();
-        System.out.println("listTest result : " + content);
+        Assertions.assertNotNull(content);
     }
 
 

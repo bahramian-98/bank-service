@@ -40,7 +40,7 @@ public class BankAccountControllerTest {
         Assertions.assertEquals(HttpStatus.CREATED.value(), mvcResult.getResponse().getStatus());
 
         String content = mvcResult.getResponse().getContentAsString();
-        System.out.println("saveTest result : " + content);
+        Assertions.assertNotNull(content);
     }
 
     @Test
@@ -54,7 +54,7 @@ public class BankAccountControllerTest {
         Assertions.assertEquals(HttpStatus.OK.value(), mvcResult.getResponse().getStatus());
 
         String content = mvcResult.getResponse().getContentAsString();
-        System.out.println("listTest result : " + content);
+        Assertions.assertNotNull(content);
     }
 
     public static String asJsonString(final Object obj) {
