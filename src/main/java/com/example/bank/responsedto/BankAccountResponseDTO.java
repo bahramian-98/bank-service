@@ -1,7 +1,6 @@
 package com.example.bank.responsedto;
 
 import com.example.bank.responsedto.core.ResponseDTO;
-import javafx.beans.property.adapter.JavaBeanBooleanPropertyBuilder;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.experimental.SuperBuilder;

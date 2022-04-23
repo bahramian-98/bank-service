@@ -1,7 +1,7 @@
 package com.example.bank.handler;
 
-import com.example.bank.exception.Error;
 import com.example.bank.exception.BankException;
+import com.example.bank.exception.Error;
 import org.springframework.core.Ordered;
 import org.springframework.core.annotation.Order;
 import org.springframework.http.HttpStatus;

@@ -4,7 +4,6 @@ import com.example.bank.mapper.core.BaseMapper;
 import com.example.bank.model.Customer;
 import com.example.bank.requestdto.CustomerRequestDTO;
 import com.example.bank.responsedto.CustomerResponseDTO;
-import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Component;
 
 @Component
